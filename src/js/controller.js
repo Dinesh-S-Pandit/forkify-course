@@ -19,9 +19,6 @@ import addRecipeView from './views/addRecipeView.js';
 if (module.hot) {
   module.hot.accept();
 }
-const newFeature = function () {
-  console.log('Welcome to the application');
-};
 
 const init = function () {
   recipeView.addHandlerRender(controlRecipes);
@@ -31,7 +28,6 @@ const init = function () {
   paginationView.addHandlerClick(controlPagination);
   bookmarksView.addHandlerRender(controlBookmarks);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  newFeature();
 };
 
 const controlRecipes = async function () {
